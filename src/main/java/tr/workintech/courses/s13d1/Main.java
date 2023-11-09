@@ -1,5 +1,7 @@
 package tr.workintech.courses.s13d1;
 
+import tr.workintech.courses.s13d4.Encapsulation;
+
 import java.util.Scanner;
 
 /**
