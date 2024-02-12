@@ -22,6 +22,15 @@ public class DosyaIslemleri {
         String dosyaIcerigi = dosyaOku();
 
         System.out.println(dosyaIcerigi);
+
+        // Kac cumle oldugunu sayan bir kod yazin
+        int cumleSayisi = kacCumle(dosyaIcerigi);
+
+        System.out.println("Cumle sayisi: " + cumleSayisi);
+    }
+
+    private static int kacCumle(String str) {
+        //TODO
     }
 
     private static String dosyaOku() throws IOException {
