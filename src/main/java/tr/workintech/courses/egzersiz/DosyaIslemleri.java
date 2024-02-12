@@ -30,7 +30,8 @@ public class DosyaIslemleri {
     }
 
     private static int kacCumle(String str) {
-        //TODO
+
+        return str.split("[.?!]").length;
     }
 
     private static String dosyaOku() throws IOException {
