@@ -4,20 +4,26 @@ public class Encapsulation {
 
     private int age = 30; // -> Bu bir field
 
-    int getAge() {
+    public int getAge() {
+        return age;
+    }
 
-        return this.age;
-    } // getter
+    public void setAge(int age) {
 
-    void setAge(int newAge) {
+        if (age < 0)
+            return;
 
-        if (newAge > 0)
-            this.age = newAge;
-    } // setter
+        this.age = age;
+    }
 
-    // Farkli islem yaparak donen bir getter
-    int getConsentfulAge() { // Resit yas
+    public int getConsentfulAge() {
 
-        return this.age - 18;
+        return this.age < 18 ? 0 : this.age - 18;
+    }
+
+    public static void main(String[] args) {
+
+        //        new Encapsulation().age; -> Java'da cok nadiren karsilasilacak bir tablo, obje ustunden direkt field erisimi
+        new Encapsulation().setAge(10);
     }
 }

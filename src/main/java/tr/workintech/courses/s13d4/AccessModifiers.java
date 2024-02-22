@@ -20,7 +20,7 @@ public class AccessModifiers {
 
     }
 
-    void packageLevelMethod() {
+    void packageLevelMethod() { // package-level
 
     }
 
